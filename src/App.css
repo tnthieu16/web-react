@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Section chung */
+.home_section, .about_section, .projects_section, .contact_section {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Home Section */
+.home_section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vh 2vw;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_contact_link {
+    height: 5vh;
+    padding: 0.75ch 1.5vw;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nav_contact_link:hover {
+    background-color: white;
+    color: black;
+}
+
+.sub_hero_text {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.sub_hero_text p {
+    width: 35vw;
+    margin-top: 5vh;
+}
+
+.hero_text {
+    font-family: "Anton", sans-serif;
+    font-size: 12.5vw;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.scroll_btn {
+    position: absolute;
+    bottom: 2vh;
+    right: 3vh;
+}
+
+/* About Section */
+.about_section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about_section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.about_span {
+    z-index: 1;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+.about_content {
+    z-index: 1;
+    margin-bottom: -15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.about_topic {
+    width: 95%;
+    display: flex;
+    gap: 4vw;
+    text-transform: uppercase;
+}
+
+.about_text {
+    font-size: 1.5vw;
+    width: 90%;
+}
+
+.skills {
+    z-index: 1;
+    padding: 2vh 2.5%;
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.15vw;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3vw;
+    overflow: hidden;
+}
+
+/* Projects Section */
+.projects_section {
+    font-family: "Anton", sans-serif;
+    padding: 5vh 2vw;
+}
+
+.project_title {
+    font-size: 4vw;
+    text-transform: uppercase;
+}
+
+.projects_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.project {
+    position: relative;
+    padding: 1vw;
+}
+
+.project img {
+    width: 250px;
+    height: auto;
+}
+
+.projects_container span {
+    font-family: "Poppins", sans-serif;
+    z-index: 2;
+    font-size: 0.9vw;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Contact Section */
+.contact_section {
+    position: relative;
+}
+
+.contact_section span {
+    position: absolute;
+    cursor: pointer;
+}
+
+.contact_section span:nth-child(1) { top: 20%; left: 15%; }
+.contact_section span:nth-child(2) { top: 20%; right: 15%; }
+.contact_section span:nth-child(3) { top: 75%; left: 15%; }
+.contact_section span:nth-child(4) { top: 75%; right: 15%; }
+.contact_section span:nth-child(5) {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border: 1px solid white;
+    padding: 1vw 1.5vw;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.contact_section span:nth-child(5):hover {
+    background-color: white;
+    color: black;
+}
+
+/* Footer */
+.footer {
+    width: 100vw;
+    height: 40vh;
+    padding: 0 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12.5vw;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.footer_title {
+    font-size: 5vw;
+    font-family: "Anton", sans-serif;
+    line-height: 1.2;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.footer div span {
+    cursor: pointer;
+}
+
+.footer div span:hover {
+    text-decoration: underline;
+}
